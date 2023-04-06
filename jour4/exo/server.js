@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   } else if (path === '/bootstrap') {
-    fs.readFile('../assets/css/bootstrap.min.css', (err, data) => {
+    fs.readFile('./assets/css/bootstrap.min.css', (err, data) => {
       if (err) {
         console.error(err);
         res.writeHead(500);
