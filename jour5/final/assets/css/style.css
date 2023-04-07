@@ -1,0 +1,98 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    border-bottom: 2px dashed black;
+}
+p {
+    font-size: 20px;
+}
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover {
+    border: 2px solid salmon;
+    border-radius: 5px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contain-users {
+    padding: 10px;
+    border: 2px solid salmon;
+    border-radius: 10px;
+}
+.user-section {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid salmon;
+}
+
+
+button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+button:active {
+  opacity: .5;
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border: 2px solid salmon;
+}
+input[type="text"] {
+    background: #FFFFFF;
+    width: 240px;
+    height: 40px;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 5px;
+}
