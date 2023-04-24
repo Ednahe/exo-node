@@ -1,0 +1,31 @@
+doctype html
+html(lang="fr")
+head
+  meta(charset="utf-8")
+  title Le super chat
+  link(rel="stylesheet", href="/styles/style.css")
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+body
+header  
+    h1 chat room avec socket.io
+main
+  section
+    aside
+      ul
+        li
+          a(href="#") General
+        li
+          a(href="#") Channel 1
+        li
+          a(href="#") Channel 2
+    section
+      ul.chat
+        //- each message in messages
+        //-   li.message=message
+      form#chat-form(method='POST')
+        input#chat-input(type='text' name='message' placeholder='Entrez votre message ici')
+        button#chat-send(type='submit') Envoyer
+
+//- script(src='/socket.io/socket.io.js')
+script(type="module", src='/scripts/app.js')
+script(src='dist/bundle.js')
